@@ -18,6 +18,10 @@ function generatePassword() {
   // code goes here
   var pwlength = prompt("How long do you want your password? (8-128 characters)");
   
+  if(pwlength< "8" || pwlength > "128"){
+    pwlength = prompt("How long do you want your password? (8-128 characters)");
+  }
+  
   var values = "";
 
   var characters = 
